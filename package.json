@@ -1,0 +1,17 @@
+{
+  "name": "coingecko-crypto-trends",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Fast CoinGecko crypto scraper for trending tokens, top market movers, prices, market cap ranks, and symbols.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "author": "tuqiiiy",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "apify": "^3.2.6",
+    "crawlee": "^3.12.2",
+    "got-scraping": "^4.0.7"
+  }
+}

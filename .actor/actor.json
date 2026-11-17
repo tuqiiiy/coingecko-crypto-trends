@@ -1,0 +1,49 @@
+{
+  "actorSpecification": 1,
+  "name": "coingecko-crypto-trends",
+  "title": "CoinGecko Crypto Trends & Market Mover Scraper",
+  "description": "Scrape trending crypto tokens, top market movers, prices, market cap ranks, symbols, and score ranks from CoinGecko. Fast, lightweight, and ideal for crypto trading bots and Telegram channels.",
+  "version": "1.0",
+  "meta": {
+    "templateId": "project_empty"
+  },
+  "dockerfile": "./Dockerfile",
+  "categories": [
+    "BUSINESS",
+    "OTHER"
+  ],
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "title": "Crypto Trends Dataset",
+      "views": {
+        "overview": {
+          "title": "Overview",
+          "transformation": {
+            "fields": [
+              "name",
+              "symbol",
+              "marketCapRank",
+              "priceUsd",
+              "priceBtc",
+              "scoreRank",
+              "slug"
+            ]
+          },
+          "display": {
+            "component": "table",
+            "columns": {
+              "name": { "label": "Token Name" },
+              "symbol": { "label": "Symbol" },
+              "marketCapRank": { "label": "Market Cap Rank" },
+              "priceUsd": { "label": "Price (USD)" },
+              "priceBtc": { "label": "Price (BTC)" },
+              "scoreRank": { "label": "Trending Rank" },
+              "slug": { "label": "Slug" }
+            }
+          }
+        }
+      }
+    }
+  }
+}
